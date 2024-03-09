@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+    --primary: #F2F1E4;
+    --secondary: #184DC4;
+}
+
+html {
+    font-size: max(100vw / 1920 * 10);
+}
+
+body {
+  font-family: "Anton", sans-serif;
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+nav {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 100;
+}
+
+.nav_wrapper {
+    width: 100%;
+}
+
+.nav_list {
+    width: 100%;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_list_item {
+    font-size: 10rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    list-style: none;
+    transition: .5s;
+}
+
+.nav_list_item:hover {
+    color: red;
+}
+
+.transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+.transition_columns {
+    display: flex;
+    width: 100%;
+}
+
+.transition_column {
+    position: relative;
+    width: 20%;
+    border-right: 1px solid #ffffff26;
+    height: 100vh;
+    transform: translateY('-101%');
+    background-color: var(--secondary);
+}
+
+.transition_column_text {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    height: calc(100% - 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.transition_column_text span {
+    font-size: 4rem;
+    color: var(--primary);
+}
+
+.transition_element {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 150;
+}
+
+.transition_element h1 {
+    font-size: 25rem;
+    color: var(--primary);
+    line-height: 0;
+    text-align: center;
+}
