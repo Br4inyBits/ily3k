@@ -10,4 +10,4 @@ This project aims to create visually appealing page transitions using GSAP, enha
 **Deploy :** `Vercel App`
 
 
-[![site](https://img.shields.io/badge/view_site-000?style=for-the-badge&logo=codemagic&logoColor=C3E628)](https://ily3k.vercel.app/)
+[![site](https://img.shields.io/badge/view_site-000?style=for-the-badge&logo=codemagic&logoColor=184DC4)](https://ily3k.vercel.app/)
